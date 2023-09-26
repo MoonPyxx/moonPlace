@@ -1,0 +1,253 @@
+body {
+    background-color: black;
+    font-family: "Courier New", monospace;
+    color: #00ff00;
+    cursor: url(cursor.cur), pointer;
+}
+/* custom font */
+@font-face {
+    font-family: "Zeldadxt"; 
+    src: url("zeldadxt.ttf") format("truetype"); 
+}
+center {
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.wrapper2{
+    position:relative;
+}
+/*header*/
+.header {
+    overflow: hidden;
+    background-size:cover;
+    position: relative;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text h1 {
+    font-family: "Zeldadxt", sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    color: #39ff14; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+/* Menu + music menu */
+.menu {
+    background-color: #39325f;
+    padding: 8px;
+    display: flex;
+    justify-content: center; 
+}
+.menu label {
+    color: #ffcc00;
+    font-weight: bold;
+}
+.links {
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    }
+.link {
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    float: none;
+    font-weight: bold;
+    font-size: 1.16em;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 0px solid red;
+    }
+    
+  .link a {
+    color: white;
+    text-decoration: none;
+    }
+.sidebar-left, .main, .sidebar-right {
+    display: inline-block;
+    }
+    
+  .sidebar-left, .sidebar-right {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    }
+    .main {
+        margin-left: 220px;
+        width: 710px;
+            }
+
+    .sidebar-right {
+        margin-left: 20px;
+    }
+@media only screen and (max-width: 768px) {
+    .sidebar-left, .main, .sidebar-right {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header-text h1 {
+        font-size: 40px;  
+    }
+}
+
+.box {  
+    padding: 5px 10px 0px 10px;
+    background:transparent;
+    color: #00ff00;
+    border: 2px solid #f8f8f8;
+    margin: 10px 0px 15px 0px;
+    }
+.box img {
+    max-width: 100%;
+    height: auto;
+    }
+    .box h1, .box h2, .box h3, .box h4, .box h5, .box h6 {
+        color:#ffcc00;
+        padding: 0.6em 0.15em 0.6em;
+        margin-top: 0px;
+        margin-bottom: 0;
+        }
+/* Profile */
+.profile-pic {
+    width: 80px; 
+    height: 80px; 
+}
+/* Content */
+.content {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 2; 
+}
+.content a {
+    color: #007bff;
+}
+.header-container {
+  position: relative;
+  
+}
+/* Projects*/
+.project {
+    border: 1px dashed #ffcc00;
+    padding: 10px;
+    margin: 20px 0;
+}
+/* Contacts */
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Skills */
+.skill h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color:#aa99f5;
+}
+/* Gif */
+.gif-container {
+    display: flex;
+    align-items: center; 
+    margin-top: 20px;
+}
+.gif img {
+    max-width: 100%;
+    height: auto;
+}
+/* Background stars */
+
+.stars, .twinkling{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(stars.png) repeat top center;
+}
+
+.twinkling{
+  background:transparent url(twinkling.png) repeat top center;
+  animation:move-twink-back 200s linear infinite;
+}
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+/* Game covers*/
+.game-cover {
+    display: none;
+    position: absolute;
+    width: 170px; 
+    border: 1px solid #7876b9;
+    z-index: 1000;
+  }
+  .game-hover:hover .game-cover {
+    display: block;
+    opacity: 1;
+  }
+  .game-hover:hover {
+    color: #dd5d5d; 
+    cursor: pointer;
+  }
+  .game-hover{
+    color: #aa99f5; 
+    cursor: pointer;
+  }
+/* Topster */
+.hidden {
+    display: none;
+}
+#topAlbumsContainer img {
+    max-width: 100%;  
+    display: block; 
+    margin: 10px auto; 
+}
+a:hover{
+    cursor: url(cursor2.cur), help;
+}
