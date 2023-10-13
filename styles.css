@@ -6,6 +6,10 @@ body {
     background-color: black;
    
 }
+/* Hover cursor */
+a:hover{
+    cursor: url(cursor2.cur), help;
+}
 /* Background Stars */
 .spacebg{
     width: 100%;
