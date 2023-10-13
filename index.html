@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Moon's Place</title>
+        <title>𝕄𝕠𝕠𝕟'𝕤 ℙ𝕝𝕒𝕔𝕖
+        </title>
         <link rel="stylesheet" type="text/css" href="styles.css">
 
     </head>
     <body>
-
+        <div class="spacebg"></div>
 <div class = wrapper>
-    <div class="stars"></div>
-    <div class="twinkling"></div> 
     <div class="header-container">
         <div class="header">
             <img src="banner.gif" alt="Welcome Banner">
@@ -22,15 +21,33 @@
     <div class = wrapper2>
         <div class=sidebar-left>
             <div class=box>
-            <h2>Status</h2>
+                <h2>Status</h2>
             </div>
             <div class=inner>
-                <p><a href="https://www.imood.com/users/moonpyx"><img src="https://moods.imood.com/display/uname-moonpyx/imood.gif" alt="The current mood of moonpyx at www.imood.com" border="0"></a></p></div></div>
-            
+                <p><a href="https://www.imood.com/users/moonpyx"><img src="https://moods.imood.com/display/uname-moonpyx/imood.gif" alt="The current mood of moonpyx at www.imood.com" border="0"></a></p>
+            </div>
+            <div class="music-player">
+                <div class=box>
+                    <h2>Soundtrack</h2>
+                </div>
+                <audio id="bg-music" loop>
+                    <source src="music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="menu">
+                    <label for="music-toggle"></label>
+                    <input type="checkbox" id="music-toggle">
+                    <br>
+                    <label for="volume-slider"></label>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                </div>
+            </div>
+        
+        </div>
             <div class=main><div class=box>  
               <h1 id=section-1>About me!</h1>
               <div class=inner>
-                <img src="pfp.png" alt="Profile Picture" class="profile-pic">
+                <img src="pfp.jpg" alt="Profile Picture" class="profile-pic">
                 <p>Hey there, I'm Moon – a computer science student from Spain and enthusiast about coding and music. Welcome to my website!</p>
           
              
@@ -42,7 +59,7 @@
                     <div class="skill">
                         <h3>C++/C: since 2022</h3>
                         <p>I'm proficient in C++ programming and enjoy solving complex problems using this language.
-                            I have experience with algorithms and data structures.
+                            I have experience with algorithms, multithreading and data structures.
                         </p>
                     </div>
                     <div class="skill">
@@ -51,19 +68,11 @@
                     </div>
                     <div class="skill">
                         <h3>Linux: since 2018</h3>
-                        <p>I have used Linux for some time and have experience with multiple distros such as Ubuntu, Arch and Fedora (my main OS at the moment).</p>
-                    </div>
-                    <div class="skill">
-                        <h3>Windows: since ?</h3>
-                        <p>It has been my main OS for a long time, so I also have a solid grasp of it. </p>
-                    </div>
-                    <div class="skill">
-                        <h3>Arduino: since 2023</h3>
-                        <p>I've tackled multiple challenges with Arduino and have a basic understanding of it.</p>
-                    </div>
+                        <p>I have used Linux for some time and have experience with multiple distros such as Ubuntu, Arch and Fedora (my main OS at the moment).</p>                    </div>
                     <div class="skill">
                         <h3>Others:</h3>
-                        <p>I am experienced with Markdown, LaTeX and Git. I have used MATLAB and R. I also possess some minor skills in video/photo editing. Additionally, I have modded games such as Mario Kart 8 and have produced content for YouTube/Twitch.</p>
+                        <p>I am experienced with Markdown, LaTeX and Git. I have used MATLAB and R. This year I started coding in Java, Ruby and Assembly  . </p>
+                        <p>Additionally, I possess some minor skills in video/photo editing, game modding and I have produced content for Youtube/Twitch.</p>
                     </div>
                 </div>
                 <h2>Languages</h2>
@@ -86,49 +95,43 @@
             <span class="game-hover" data-game="mario-kart">Mario Kart<img src = "mk8dx.jpg" alt= "Mario Kart 8 cover" class = "game-cover"></span>,
             <span class="game-hover" data-game="ppt">Puyo Puyo Tetris<img src = "ppt.webp" alt= "Puyo Puyo tetris cover" class = "game-cover"></span>,
             <span class="game-hover" data-game="zelda">Zelda<img src = "majoras.webp" alt= "Zelda cover" class = "game-cover"></span>,
+            <span class="game-hover" data-game="animal-crossing">Animal Crossing<img src = "wildworld.jpg" alt= "Animal crossing cover" class = "game-cover"></span>,
             <span class="game-hover" data-game="nier">NieR<img src = "nier.jpg" alt= "NieR cover" class = "game-cover"></span>.</li>
         <li>I practice sports such as football and running. I love watching F1 and football sometimes.</li>
-        <li>Composing music and checking out new albums. <a href="javascript:void(0);" id="toggleTopster">Check out my last year's Topster!</a>
-
-            <div id="topAlbumsContainer" class="hidden">
-                <img src="topster.jpeg" alt="Top Albums">
-            </div>
-        <li>Reading: currently reading <span class="game-hover" data-game="book"> "Kafka on the Shore" by Haruki Murakami. <img src = "kafka.jpg" alt= "Fire Emblem cover" class = "game-cover"></span> <a href="https://www.goodreads.com/user/show/170046019" target="_blank">Check out my Goodreads profile.</a></li>
+        <li>I have cosplayed 9S from NieR Automata and Dimitri from FE: 3 Houses.</li>
+        <li>Reading: currently reading "Kafka on the Shore" by Haruki Murakami.<a href="https://www.goodreads.com/user/show/170046019" target="_blank">Check out my Goodreads profile.</a></li>
         </ul>
 
     </div>
-    <audio id="bg-music" loop>
-        <source src="music.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <div class="gif-container">
-        <div class="gif">
-            <img src="boyk2.gif" alt="cat dancing" width="100">
-        </div>
-        <div class="menu">
-            <label for="music-toggle">Some cool music:</label>
-            <input type="checkbox" id="music-toggle">
-            <br>
-            <label for="volume-slider">Volume:</label>
-            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
-        </div>
-    </div>         
 </div>
 </div>
 </div>
 
 <div class=sidebar-right>
     <div class=box>
-        <h3>Contact me</h3>
+        <h2>Contact me</h2>
         <div class=inner></div></div>
             <p>Feel free to reach out to me through the following channels:</p>
 
             <ul class="contact-list">  
-            <li><a href="https://twitter.com/MoonPyxx" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/MoonPyxx" target="_blank">GitHub</a></li>
-            <li>Discord: moonpyx</li>
-            <li>Email: moonpyx6@gmail.com</li>
+                <li>
+                    <a href="https://twitter.com/MoonPyxx" target="_blank">
+                        <img src="tw.png" alt="Twitter" width="20"> Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/MoonPyxx" target="_blank">
+                        <img src="github.png" alt="GitHub" width="20"> GitHub
+                    </a>
+                </li>
+            <li>
+                <img src="discord.png" alt="Discord" width="20"> 
+                Discord: moonpyx
+            </li>
+            <li>
+                <img src="mail.png" alt="Mail" width="20"> 
+                Email: moonpyx6@gmail.com
+            </li>
             </ul>
             </div>
 <script src="script.js"></script>

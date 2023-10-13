@@ -24,16 +24,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("daysCounter").textContent = daysDifference;
 });
-
-/* Display topster*/
-
-var toggleText = document.getElementById("toggleTopster");
-var albumsContainer = document.getElementById("topAlbumsContainer");
-
-toggleText.onclick = function() {
-    if(albumsContainer.style.display === "none" || albumsContainer.style.display === "") {
-        albumsContainer.style.display = "block";
-    } else {
-        albumsContainer.style.display = "none";
-    }
-}
