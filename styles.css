@@ -241,3 +241,11 @@ z-index: 2;
     color: #aa99f5; 
     cursor: pointer;
   }
+  /* Language change flags */
+  nav a img {
+    max-height: 30px; 
+    max-width: 30px; 
+    height: auto; 
+    width: auto; 
+    margin: 0 5px;
+}
