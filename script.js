@@ -25,30 +25,31 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("daysCounter").textContent = daysDifference;
 });
 // Detect language
+function getCurrentPageLanguage() {
+    return window.location.href.includes('index_es.html') ? 'es' : 'en';
+}
+
 window.onload = function() {
     var savedLang = localStorage.getItem('userLangPref');
     var userLang = navigator.language || navigator.userLanguage;
+    var currentPageLang = getCurrentPageLanguage();
+
     if (!savedLang) {
-        if (userLang.includes('es')) {
-            localStorage.setItem('userLangPref', 'es');
-            window.location.href = 'https://moonpyx.me/index_es.html';
-        } else {
-            localStorage.setItem('userLangPref', 'en');
-            window.location.href = 'https://moonpyx.me';
+        var preferredLang = userLang.includes('es') ? 'es' : 'en';
+        localStorage.setItem('userLangPref', preferredLang);
+
+        if (currentPageLang !== preferredLang) {
+            window.location.href = preferredLang === 'es' ? 'https://moonpyx.me/index_es.html' : 'https://moonpyx.me';
         }
-    } else {
-        if (savedLang === 'es') {
-            window.location.href = 'https://moonpyx.me/index_es.html';
-        } else {
-            window.location.href = 'https://moonpyx.me';
-        }
+    } else if (currentPageLang !== savedLang) {
+        window.location.href = savedLang === 'es' ? 'https://moonpyx.me/index_es.html' : 'https://moonpyx.me';
     }
 };
+
 function changeLanguage(lang) {
-    localStorage.setItem('userLangPref', lang);
-    if (lang === 'es') {
-        window.location.href = 'https://moonpyx.me/index_es.html';
-    } else {
-        window.location.href = 'https://moonpyx.me';
+    var currentPageLang = getCurrentPageLanguage();
+    if (currentPageLang !== lang) {
+        localStorage.setItem('userLangPref', lang);
+        window.location.href = lang === 'es' ? 'https://moonpyx.me/index_es.html' : 'https://moonpyx.me';
     }
 }
