@@ -26,10 +26,29 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 // Detect language
 window.onload = function() {
-    var userLang = navigator.language || navigator.userLanguage; 
-    if (userLang.includes('es')) {
-        window.location.href = 'https://moonpyx.me/index_es.html';
+    var savedLang = localStorage.getItem('userLangPref');
+    var userLang = navigator.language || navigator.userLanguage;
+    if (!savedLang) {
+        if (userLang.includes('es')) {
+            localStorage.setItem('userLangPref', 'es');
+            window.location.href = 'https://moonpyx.me/index_es.html';
+        } else {
+            localStorage.setItem('userLangPref', 'en');
+            window.location.href = 'https://moonpyx.me';
+        }
     } else {
-        window.location.href = 'https://moonpyx.me'; 
+        if (savedLang === 'es') {
+            window.location.href = 'https://moonpyx.me/index_es.html';
+        } else {
+            window.location.href = 'https://moonpyx.me';
+        }
     }
 };
+function changeLanguage(lang) {
+    localStorage.setItem('userLangPref', lang);
+    if (lang === 'es') {
+        window.location.href = 'https://moonpyx.me/index_es.html';
+    } else {
+        window.location.href = 'https://moonpyx.me';
+    }
+}
