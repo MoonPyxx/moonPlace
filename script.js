@@ -24,3 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("daysCounter").textContent = daysDifference;
 });
+// Detect language
+window.onload = function() {
+    var userLang = navigator.language || navigator.userLanguage; 
+    if (userLang.includes('es')) {
+        window.location.href = 'https://moonpyx.me/index_es.html';
+    } else {
+        window.location.href = 'https://moonpyx.me'; 
+    }
+};
