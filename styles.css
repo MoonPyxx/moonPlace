@@ -124,26 +124,39 @@ h1,h2,h3,h4,h5{
     position: absolute;
     top: 0;
     }
-    .main {
-        margin-left: 220px;
-        width: 710px;
-            }
+.sidebar-right {
+     margin-left: 20px;
+}
+.main {
+    margin-left: 220px; 
+    width: calc(100% - 440px);
+}
 
-    .sidebar-right {
-        margin-left: 20px;
-    }
 @media only screen and (max-width: 768px) {
-    .sidebar-left, .main, .sidebar-right {
-        display: block;
-        position: relative;
+    .sidebar-left, .sidebar-right, .main {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        position: relative; 
+    }
+    
+    .main {
+        margin-top: 20px; 
+    }
+
+    .header img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .header-text h1 {
+        font-size: 30px;
     }
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 480px) {
     .header-text h1 {
-        font-size: 40px;  
+        font-size: 24px;
     }
 }
 
