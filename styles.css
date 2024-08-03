@@ -31,11 +31,11 @@ a:hover{
 /* custom font */
 @font-face {
     font-family: "Alagard"; 
-    src: url("alagard.ttf") format("truetype"); 
+    src: url("media/alagard.ttf") format("truetype"); 
 }
 @font-face {
     font-family: "ModernDOS";
-    src: url("moderndos.ttf") format("truetype");
+    src: url("media/moderndos.ttf") format("truetype");
 }
 center {
     text-align: center;
