@@ -19,7 +19,7 @@ a:hover{
 
 .spacebg {
     animation: backgroundScroll 20s linear infinite;
-    background-image: url('space.gif'); 
+    background-image: url('assets/space.gif'); 
     z-index: -1;
 }
 @keyframes backgroundScroll {
@@ -31,11 +31,11 @@ a:hover{
 /* custom font */
 @font-face {
     font-family: "Alagard"; 
-    src: url("media/alagard.ttf") format("truetype"); 
+    src: url("assets/alagard.ttf") format("truetype"); 
 }
 @font-face {
     font-family: "ModernDOS";
-    src: url("media/moderndos.ttf") format("truetype");
+    src: url("assets/moderndos.ttf") format("truetype");
 }
 center {
     text-align: center;
