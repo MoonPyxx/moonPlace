@@ -2,13 +2,13 @@ body {
     font-family: "ModernDOS", monospace;
     font-size: 21px;
     color: #00ff00;
-    cursor: url(cursor.cur), pointer;
+    cursor: url(assets/cursor.cur), pointer;
     background-color: black;
    
 }
 /* Hover cursor */
 a:hover{
-    cursor: url(cursor2.cur), help;
+    cursor: url(assets/cursor2.cur), help;
 }
 /* Background Stars */
 .spacebg{
