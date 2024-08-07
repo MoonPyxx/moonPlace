@@ -161,7 +161,7 @@ h1,h2,h3,h4,h5{
 }
 
 .box {  
-    padding: 5px 10px 0px 10px;
+    padding: 15px;
     background:transparent;
     color: #00ff00;
     border: 2px solid #f8f8f8;
@@ -233,12 +233,4 @@ z-index: 2;
 .gif img {
     max-width: 100%;
     height: auto;
-}
-  /* Language change flags */
-  nav a img {
-    max-height: 30px; 
-    max-width: 30px; 
-    height: auto; 
-    width: auto; 
-    margin: 0 5px;
 }
