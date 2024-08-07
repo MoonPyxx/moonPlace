@@ -1,6 +1,6 @@
 const user = 'prince_tar';
 const apiKey = '5895e406d0d292905d25a1993f94ad0e';
-const url = 'http://ws.audioscrobbler.com/2.0/';
+const url = 'https://ws.audioscrobbler.com/2.0/';
 const resultDiv = document.getElementById('result');
 
 const timestamp30DaysAgo = Math.floor(Date.now() / 1000) - (30 * 24 * 60 * 60);
