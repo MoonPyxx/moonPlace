@@ -234,26 +234,6 @@ z-index: 2;
     max-width: 100%;
     height: auto;
 }
-/* Game covers*/
-.game-cover {
-    display: none;
-    position: absolute;
-    width: 170px; 
-    border: 1px solid #7876b9;
-    z-index: 1000;
-  }
-  .game-hover:hover .game-cover {
-    display: block;
-    opacity: 1;
-  }
-  .game-hover:hover {
-    color: #dd5d5d; 
-    cursor: pointer;
-  }
-  .game-hover{
-    color: #aa99f5; 
-    cursor: pointer;
-  }
   /* Language change flags */
   nav a img {
     max-height: 30px; 
